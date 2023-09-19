@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body::-webkit-scrollbar{
+ display: none;   
+}
+
+li{
+    @apply hover:bg-white hover:text-black p-1 sm:hover:bg-transparent
+      sm:text-gray-400  sm:font-semibold sm:active:text-black
+}
+.active{
+    @apply bg-gradient-to-tr from-[#201f22] to-[#373638]   transition-colors
+}
